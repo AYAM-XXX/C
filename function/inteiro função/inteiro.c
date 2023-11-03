@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-void verificador(int n1)
+int verificador(int n1)
 {
     int res;
     if (n1 < 0)
     {
-        res = -1;
+        res = printf("\no resultado e: -1");
     }
     else if (n1 > 0)
     {
-        res = 1;
+        res = printf("\no resultado e: 1");
     }
     else
     {
-        res = 0;
+        res = printf("\no resultado e: 0");
     }
-    printf("\no resultado e: %d", res);
+    return res;
 } // verifica se o numero e inteiro
 int main()
 {
