@@ -15,36 +15,36 @@ int main()
     float x1, y1, x2, y2, resultado;
 
     printf("\nqual o valor de x1?: ");
-    scanf("%f", &x1);
+    scanf("%f", &x1);// pega o valor de x1
     while (x1 < 0)
     {
         printf("\nqual o valor de x1?: ");
         scanf("%f", &x1);
-    } // pega o valor de x1
+    }//concistencia
 
     printf("\nqual o valor de y1?: ");
-    scanf("%f", &y1);
+    scanf("%f", &y1);// pega o valor de y1
     while (y1 < 0)
     {
         printf("\nqual o valor de y1?: ");
         scanf("%f", &y1);
-    } // pega o valor de y1
+    } //concistencia
 
     printf("\nqual o valor de x2?: ");
-    scanf("%f", &x2);
+    scanf("%f", &x2);// pega o valor de x2
     while (x2 < 0)
     {
         printf("\nqual o valor de x2?: ");
         scanf("%f", &x2);
-    } // pega o valor de x2
+    } //concistencia
 
     printf("\nqual o valor de y2?: ");
-    scanf("%f", &y2);
+    scanf("%f", &y2); // pega o valor de y2
     while (y2 < 0)
     {
         printf("\nqual o valor de y2?: ");
         scanf("%f", &y2);
-    } // pega o valor de y2
+    }//concistencia
 
     resultado = distancia(x1, y1, x2, y2); // recebe a função
 

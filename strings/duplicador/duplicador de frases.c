@@ -14,7 +14,7 @@ int main()
 
     for (i = 0; i < 70; i++)
     {
-        printf("%c", frase[i]);
+        printf("%c", frase[i]);//replica letra por letra
         if (frase[i] == ' ' || frase[i] == '.')
         {
             for (j = j; j < i; j++)
@@ -22,8 +22,8 @@ int main()
                 while (frase[j] == ' ')
                 {
                     j++;
-                }
-                printf("%c", frase[j]);
+                }// caso identificar um espaço " " pula ele e passa para letra
+                printf("%c", frase[j]);//repete a frase
             }
         }
     }
