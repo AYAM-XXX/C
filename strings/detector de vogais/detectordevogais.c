@@ -8,7 +8,7 @@ int main()
 
     printf("digite a frase: ");
     gets(frase);
-    for (i = 0; i < 25; i++)
+    for (i = 0; i < strlen(frase); i++)
     {
         if (frase[i] == 'a' || frase[i] == 'e' || frase[i] == 'i' || frase[i] == 'o' || frase[i] == 'u')
         {
