@@ -5,17 +5,18 @@ int main()
 {
     char frase[25];
     int i, cont = 0;
-    printf("\ndigite a frase corretamente, utilizando espaço ' ' é ponto final. quando terminar a frase.\n");
+    printf("\ndigite a frase corretamente, utilizando espaço ' '\n");
     printf("digite a frase: ");
     gets(frase);
     for (i = 0; i < 25; i++)
     {
-        if (frase[i] == ' ' || frase[i] == '.')
+        if (frase[i] != ' ' || frase[i] != '/0')
         {
-            cont++;
+           
         }
         else
         {
+             cont++;
         }
     }
     printf("\nA frase tem %d palavras", cont);

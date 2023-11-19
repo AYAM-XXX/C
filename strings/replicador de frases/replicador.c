@@ -15,7 +15,7 @@ int main()
     for (i = 0; i < 50; i++)
     {
         printf("%c", frase[i]);
-        if (frase[i] == ' ' || frase[i] == '.')
+        if (frase[i] == ' ' || frase[i] == '/0')
         {
             printf("\n");
         }

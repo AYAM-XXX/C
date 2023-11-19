@@ -26,13 +26,8 @@ int classificador(int idade)
                 } // retorna juvenil B
                 else
                 {
-                    if (idade >= 18)
-                    {
-                        printf("\nadulto");
-                    } // retorna adulto
-                    else
-                    {
-                    }
+                    printf("\nadulto");
+                    // retorna adulto
                 }
             }
         }

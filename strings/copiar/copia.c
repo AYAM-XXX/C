@@ -15,5 +15,6 @@ int main()
 
     strcpy(copia,original);
     strcat(copia," (copia)");//recebe a string original e coloca a frase "copiar"
+    puts(original);
     puts(copia);
 }
