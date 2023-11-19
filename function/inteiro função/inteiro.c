@@ -1,21 +1,25 @@
 #include <stdio.h>
+#include <math.h>
 
 int verificador(int n1)
 {
-    int res;
+    printf("%d", n1 / fabs(n1));
     if (n1 < 0)
     {
-        res = printf("\no resultado e: -1");
-    }
-    else if (n1 > 0)
-    {
-        res = printf("\no resultado e: 1");
+        printf("\no resultado e: -1");
     }
     else
     {
-        res = printf("\no resultado e: 0");
+        if (n1 > 0)
+        {
+            printf("\no resultado e: 1");
+        }
+        else
+        {
+            printf("\no resultado e: 0");
+        }
     }
-    return res;
+
 } // verifica se o numero e inteiro
 int main()
 {
