@@ -1,9 +1,10 @@
 #include <stdio.h>
-int menu;
+// variaveis comuns
+int menu,idade,pri_vez;
 // contadores
 int contpop = 0, controck = 0, contpagode = 0, contsertanejo = 0;
-int idade, pri_vez, pri_cont = 0, cont_pessoa = 0, soma_idade = 0;
-void menumsc()
+int  pri_cont = 0, cont_pessoa = 0, soma_idade = 0;
+void menumsc() // menu de escolha de estilo
 {
     printf("\n\nqual estilo de musica voce prefere? \n\n1-pop\n2-rock\n3-pagode\n4-sertanejo\ndigite sua resposta: ");
     scanf("%d", &menu);
@@ -32,7 +33,7 @@ void menumsc()
         break;
     }
 }
-void idadefun()
+void idadefun()// verifica idade 
 {
     printf("qual sua idade ?: ");
     scanf("%d", &idade);
@@ -70,7 +71,7 @@ int main()
         cont_pessoa++;
         idadefun();
     }
-    if (contpop > controck && contpop > contpagode && contpop > contsertanejo)
+    if (contpop > controck && contpop > contpagode && contpop > contsertanejo)//concistencia para ver estilo mais votado
     {
         printf("\npop e o estilo de musica mais votado");
     }
