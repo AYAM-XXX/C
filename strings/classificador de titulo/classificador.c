@@ -7,12 +7,7 @@ int main()
     int sexo, titulo;
     // titulos
     char title[24];
-
-    for (int i = 0; i < 20; i++)
-    { // reseta variavel
-        nome[i] = ' ';
-    }
-
+    
     printf("\ninsira o nome do professor: "); // pega o nome
     scanf("%s", nome);
     printf("\n qual o sexo?\ndigite:\n1-feminino\n2-masculino\ndigite: "); // pega a var sexo
@@ -35,14 +30,10 @@ int main()
         if (titulo == 1)
         {
             strcpy(title, "Ma. ");
-            strcat(title, nome);
-            printf("%s", title);
         }
         else
         {
             strcpy(title, "Dra. ");
-            strcat(title, nome);
-            printf("%s", title);
         }
     }
     else
@@ -50,16 +41,15 @@ int main()
         if (titulo == 1)
         {
             strcpy(title, "Me. ");
-            strcat(title, nome);
-            printf("%s", title);
         }
         else
         {
             strcpy(title, "Dr. ");
-            strcat(title, nome);
-            printf("%s", title);
+            
         }
     }
+            strcat(title, nome);
+            printf("%s", title);
 }
 
 // Elabore um programa que leia o nome de um professor (a), o sexo (F ou M) e a titulação
