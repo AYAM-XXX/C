@@ -3,7 +3,7 @@
 
 int main()
 {
-    int tam = 5; // define o tamanho
+    int tam = 3; // define o tamanho
     int matriz[tam][tam];
     int vetor[tam];
     int tamv = pow(tam, 2); // tamanho ao quadrado da matriz para pegar todos os valores
@@ -55,29 +55,11 @@ int main()
 
     for (int i = 0; i < tam; i++) // transfere a diagonal principal para um vetor
     {
-        for (int j = 0; j < tam; j++)
-        {
-            if (i == j)
-            {
-                vetor[i] = matriz[i][j];
-            }
-            else
-            {
-            }
-        }
+                vetor[i] = matriz[i][i];
     }
     for (int i = 0; i < tam; i++) // transfere a diagonal principal para secundaria
     {
-        for (int j = 0; j < tam; j++)
-        {
-            if (i + j == tam - 1)
-            {
-                matriz[i][j] = vetor[i];
-            }
-            else
-            {
-            }
-        }
+                matriz[i][tam - i - 1] = vetor[i];
     }
     printf("\n\nMATRIZ COM DIAGONAIS TROCADAS\n\n"); // printa a matriz com as diagonais trocadas
     for (int i = 0; i < tam; i++)

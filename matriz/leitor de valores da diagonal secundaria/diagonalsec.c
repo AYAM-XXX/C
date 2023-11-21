@@ -15,30 +15,27 @@ int main()
                 printf("\nqual o valor da posicao [%d][%d]: ", i, j);
                 scanf("%d", &original[i][j]);
             }
-            if (i + j == tam - 1)
-            {
-                if (original[i][j] > 20)
-                {
-                    cont++;
-                }
-                else
-                {
-                }
-            }
-            else
-            {
-            }
         }
     }
-    
+    for (i = 0; i < tam; i++)
+    {
+        if (original[i][tam - i] > 20)
+        {
+            cont++;
+        }
+        else
+        {
+        }
+    }
+
     printf("\nsão maiore que 20 na diagonal secundaria:%d\n\n ", cont);
-      for (i = 0; i < tam; i++)
+    for (i = 0; i < tam; i++)
     {
         for (j = 0; j < tam; j++)
         {
-           printf("%d   ", original[i][j]);
+            printf("%d   ", original[i][j]);
         }
-         printf("\n\n");
+        printf("\n\n");
     }
 }
 // Elabore um programa que manipule com uma matriz 5 x 5 de inteiros, posteriormente conte quantos elementos da diagonal secundária são maiores que 20.
