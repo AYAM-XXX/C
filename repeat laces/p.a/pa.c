@@ -9,7 +9,7 @@ int main()
     printf("\ndigite a razao:");
     scanf("%d", &razao);
 
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 10; i++)
     {
         if (i == 0)
         {
