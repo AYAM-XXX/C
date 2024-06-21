@@ -37,7 +37,7 @@ int main()
     }
     for (int i = 0; i < cont; i++)
     {
-        printf("\nteve aumento no mes: %d", mesaum[i]);
+        printf("\nteve aumento no mes: %d", mesaum[i] + 1);
         printf("\ntotal do aumento: %.2f\n", valoraumento[i]);
     }
     printf("total salario: %.2f", totalsalario);
