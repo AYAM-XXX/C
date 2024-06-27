@@ -11,13 +11,6 @@ int main()
     {
         for (j = 0; j < 4; j++)
         {
-            produto[i][j] = 0;
-        }//reseta as váriaveis
-    }
-    for (i = 0; i < 4; i++)
-    {
-        for (j = 0; j < 4; j++)
-        {
             produto[i][j] = i * j;
         }
     }//adiciona o produto de linha e coluna em cada espaço da matriz
@@ -25,7 +18,8 @@ int main()
     {
         for (j = 0; j < 4; j++)
         {
-            printf("\nindice[%d][%d] e :[%d]", i, j, produto[i][j]);
+            printf("[%d]", produto[i][j]);
         }
+     printf("\n");
     }// printa a matriz
 }

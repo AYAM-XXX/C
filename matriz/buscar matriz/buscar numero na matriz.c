@@ -1,36 +1,41 @@
-#include <stdio.h>
+// Faça um programa que manipule com uma matriz 5 x 5 de inteiros.
+// Leia também um valor inteiro independente. O programa
+// deverá fazer uma busca à desse valor na matriz e, ao final,
+// escrever a localização (linha e coluna) ou uma mensagem de
+// “não encontrado
 
+#include <stdio.h>
 int main()
 {
-    int original[5][5], i, j, buscar = 0, validacao = 0;
+    int tam = 2;
+    int matriz[tam][tam], valor, encontrado = 0;
 
-    for (i = 0; i < 5; i++)
+    for (int i = 0; i < tam; i++)
     {
-        for (j = 0; j < 5; j++)
+        for (int j = 0; j < tam; j++)
         {
-            do
-            {
-                printf("insira um numero inteiro do indice[%d][%d]: ", i, j);
-                scanf("%d", &original[i][j]);
-            } while (original[i][j] < 0);
+            printf("digite um numero: ");
+            scanf("%d", &matriz[i][j]);
         }
-    } // pega o valor das váriaveis
-    printf("\nqual valor voce que buscar: ");
-    scanf("%d", &buscar);
-
-    for (i = 0; i < 5; i++)
+    }
+    printf("digite um numero de busca: ");
+    scanf("%d", &valor);
+    for (int i = 0; i < tam; i++)
     {
-        for (j = 0; j < 5; j++)
+        for (int j = 0; j < tam; j++)
         {
-            if (buscar == original[i][j])
+            if (valor == matriz[i][j])
             {
-                printf("\no indice que esta esse valor e [%d][%d]", i, j);
-                validacao = 1;
+                printf("\nvalor %d encontrado na posicao [%d][%d]", valor, i, j);
+                encontrado = 1;
+            }
+            else
+            {
             }
         }
-    }//faz a busca dos valores e printa a busca
-    if (validacao != 1)
+    }
+    if (encontrado != 1)
     {
-        printf("\nvalor nao encontrado");
-    }//printa se n achar a busca
+        printf("\nvalor não encontrado");
+    }
 }
